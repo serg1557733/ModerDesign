@@ -1,0 +1,27 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+
+* {
+    font-family: 'SF Pro Display', normal;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', normal;
+}
+
+*,
+:before,
+:after {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/burger.scss';

@@ -1,0 +1,74 @@
+.header {
+    min-height: 100vh;
+    position: relative;
+    background-image: url('../../img/header/bcheader.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 472px 0 84px 0;
+
+    &__wrapper {
+        h1 {
+            max-width: 455px;
+            font-weight: 600;
+            font-size: 62px;
+            line-height: 76px;
+            color: #FFFFFF;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        list-style: none;
+        margin-bottom: 76px;
+
+        &-item {
+            margin-right: 28px;
+            position: relative;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.74);
+        }
+
+        &-link {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.74);
+
+            &:hover {
+                color: inherit;
+                text-decoration: inherit;
+            }
+
+            &_active {
+                color: #FFFFFF;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 22px;
+                    height: 2px;
+                    background: #FFFFFF;
+                    border-radius: 2px;
+                }
+
+                &:hover {
+                    color: #FFFFFF;
+                    text-decoration: inherit;
+                }
+            }
+        }
+    }
+
+    &__arrow {
+        width: 52px;
+        height: 52px;
+        border: 1px solid #FFFFFF;
+        border-radius: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+
+    }
+}
