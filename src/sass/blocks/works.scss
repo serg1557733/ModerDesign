@@ -1,0 +1,88 @@
+.works {
+    padding-top: 150px;
+    h3 {
+        margin-bottom: 32px;
+    }
+    &__menu {
+        display: flex;
+        list-style: none;
+        margin-bottom: 64px;
+        &-item {
+            margin-right: 28px;
+            position: relative;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.74);
+        }
+        &-link {
+            color: rgba(34, 34, 34, 0.62);
+            &:hover {
+                color: rgba(34, 34, 34, 0.62);
+                text-decoration: inherit;
+            }
+            &_active {
+                color: #222222;
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 22px;
+                    height: 2px;
+                    background: #222222;;
+                    border-radius: 2px;
+                }
+            }
+        
+        }
+    }
+    &__tabs{
+        &-wrapper {
+            display: flex;
+            justify-content:space-between;
+        }
+        &-arrows {
+            display: flex;
+            justify-content:space-between;
+            min-width: 80px;
+            &_prev {
+                margin-right: 14px;
+                width: 0;
+                height: 0;
+                position: relative;
+                cursor: pointer;
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-right: 10px solid rgba(34, 34, 34, 0.62);
+                &:after {
+                    content: " ";
+                    width: 17px;
+                    background: rgba(34, 34, 34, 0.62);
+                    height: 2px;
+                    position: absolute;
+                    top: -1px;
+                    right: -27px;
+                }
+            }
+            &_next {
+                width: 0;
+                height: 0;
+                position: relative;
+                cursor: pointer;
+                transform: rotate(-180deg);
+                border-top: 4px solid transparent;
+                border-bottom: 4px solid transparent;
+                border-right: 10px solid rgba(34, 34, 34, 0.62);
+                &:after {
+                    content: " ";
+                    width: 17px;
+                    background: rgba(34, 34, 34, 0.62);
+                    height: 2px;
+                    position: absolute;
+                    top: -1px;
+                    right: -27px;
+                }
+            }
+        }
+    }
+}

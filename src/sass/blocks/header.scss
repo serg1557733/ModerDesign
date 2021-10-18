@@ -33,16 +33,15 @@
             text-transform: uppercase;
             color: rgba(255, 255, 255, 0.74);
         }
+       
 
         &-link {
             text-decoration: none;
             color: rgba(255, 255, 255, 0.74);
-
             &:hover {
                 color: inherit;
                 text-decoration: inherit;
             }
-
             &_active {
                 color: #FFFFFF;
 

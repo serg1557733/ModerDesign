@@ -24,6 +24,9 @@ html {
     margin: 0 auto;
 }
 
+@import 'blocks/title.scss';
 @import 'blocks/header';
 @import 'blocks/burger.scss';
 @import 'blocks/about.scss';
+@import 'blocks/works.scss';
+@import 'blocks/projects.scss';
