@@ -1,13 +1,30 @@
 //burger menu activation classes
 
-const burger = document.querySelector('.burger');
-const menu = document.querySelector('.burger__menu');
+const burger = document.querySelector('.burger'),
+     menu = document.querySelector('.burger__menu'),
+     overlay = document.querySelector('.overlay');
 
 burger.addEventListener('click', () => {
     menu.classList.toggle('burger__menu_active');
     burger.classList.toggle('burger_active');
+    if (document.body.style.overflow === "hidden"){
+         hideOverlay()
+    } else {
+        showOverlay(); 
+    }
+    
 });
 
+
+function showOverlay() {
+    document.body.style.overflow = "hidden";
+    overlay.style.display = 'block';
+}
+
+function hideOverlay(){
+    document.body.style.overflow = "";
+    overlay.style.display = 'none';
+}
 //menu toggle
 const menuItems = document.querySelectorAll('.header__menu-link'),
     menuParent = document.querySelector('.header__menu');

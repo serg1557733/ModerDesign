@@ -1,12 +1,13 @@
 .header {
     min-height: 100vh;
-    position: relative;
     background-image: url('../../img/header/bcheader.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 472px 0 84px 0;
-
+    padding: 50px 0 84px 0;
+    &__top {
+        margin-bottom: 396px;
+    }
     &__wrapper {
         h1 {
             max-width: 455px;
