@@ -1,0 +1,73 @@
+.about {
+    padding-top: 150px;
+    &__top-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 120px;
+    }
+    &__top-content {
+        max-width: 45%;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(34, 34, 34, 0.62);
+        text-align: start;
+        padding-right: 20px;
+        h3 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        color: #222222;
+        margin-bottom: 32px;
+        margin-right: 20px;
+        }
+    }
+    &__top-title {
+        max-width: 45%;
+        h2 {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+        color: #222222;
+        }
+
+    }
+    &__items {
+        display: flex;
+        justify-content:space-around;
+        margin-bottom: 150px;
+    }
+    &__item {
+        max-width: 260px;
+        text-align: center;
+        &-img {       //i can used pseudo)
+            width: 76px;
+            height: 76px;
+            margin: 0 auto;
+            margin-bottom: 28px;
+            padding: 20px;
+            background: #FFFFFF;
+            border: 1px solid rgba(34, 34, 34, 0.26);
+            border-radius:100%;
+        }
+        &-title {
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: rgba(34, 34, 34, 0.62);
+            h4 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 26px;
+            color: #222222;
+            margin-bottom: 12px;
+            }
+        }
+    }
+}
+.divider {
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    background: #DEDEDE;
+    
+}

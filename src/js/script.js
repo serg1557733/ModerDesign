@@ -1,18 +1,18 @@
 //burger menu activation classes
 
 const burger = document.querySelector('.burger'),
-     menu = document.querySelector('.burger__menu'),
-     overlay = document.querySelector('.overlay');
+    menu = document.querySelector('.burger__menu'),
+    overlay = document.querySelector('.overlay');
 
 burger.addEventListener('click', () => {
     menu.classList.toggle('burger__menu_active');
     burger.classList.toggle('burger_active');
-    if (document.body.style.overflow === "hidden"){
-         hideOverlay()
+    if (document.body.style.overflow === "hidden") {
+        hideOverlay()
     } else {
-        showOverlay(); 
+        showOverlay();
     }
-    
+
 });
 
 
@@ -21,7 +21,7 @@ function showOverlay() {
     overlay.style.display = 'block';
 }
 
-function hideOverlay(){
+function hideOverlay() {
     document.body.style.overflow = "";
     overlay.style.display = 'none';
 }
