@@ -8,7 +8,7 @@ burger.addEventListener('click', () => {
     menu.classList.toggle('burger__menu_active');
     burger.classList.toggle('burger_active');
     if (document.body.style.overflow === "hidden") {
-        hideOverlay()
+        hideOverlay();
     } else {
         showOverlay();
     }
